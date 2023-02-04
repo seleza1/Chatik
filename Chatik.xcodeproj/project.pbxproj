@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AB0F6204D5AA7423B50CAD5 /* Pods_Chatik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B70C3CFD5C52FCE3DE3A05 /* Pods_Chatik.framework */; };
 		CE1F863A298E2B2F00C62268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F8639298E2B2F00C62268 /* AppDelegate.swift */; };
 		CE1F863C298E2B2F00C62268 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F863B298E2B2F00C62268 /* SceneDelegate.swift */; };
-		CE1F863E298E2B2F00C62268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F863D298E2B2F00C62268 /* ViewController.swift */; };
+		CE1F863E298E2B2F00C62268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F863D298E2B2F00C62268 /* LoginViewController.swift */; };
 		CE1F8641298E2B2F00C62268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1F863F298E2B2F00C62268 /* Main.storyboard */; };
 		CE1F8643298E2B3200C62268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1F8642298E2B3200C62268 /* Assets.xcassets */; };
 		CE1F8646298E2B3200C62268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1F8644298E2B3200C62268 /* LaunchScreen.storyboard */; };
+		CE1F864E298E2C2700C62268 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69B70C3CFD5C52FCE3DE3A05 /* Pods_Chatik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		878CFC3626395F7DA6EB03F3 /* Pods-Chatik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatik.debug.xcconfig"; path = "Target Support Files/Pods-Chatik/Pods-Chatik.debug.xcconfig"; sourceTree = "<group>"; };
+		B356229F87E86CB129AFDD40 /* Pods-Chatik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatik.release.xcconfig"; path = "Target Support Files/Pods-Chatik/Pods-Chatik.release.xcconfig"; sourceTree = "<group>"; };
 		CE1F8636298E2B2F00C62268 /* Chatik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1F8639298E2B2F00C62268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1F863B298E2B2F00C62268 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE1F863D298E2B2F00C62268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE1F863D298E2B2F00C62268 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE1F8640298E2B2F00C62268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE1F8642298E2B3200C62268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1F8645298E2B3200C62268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1F8647298E2B3200C62268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB0F6204D5AA7423B50CAD5 /* Pods_Chatik.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				CE1F8638298E2B2F00C62268 /* Chatik */,
 				CE1F8637298E2B2F00C62268 /* Products */,
+				FD696ED505918B70E2E282E7 /* Pods */,
+				EE865D9FAC3C90E40F5760E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,89 @@
 		CE1F8638298E2B2F00C62268 /* Chatik */ = {
 			isa = PBXGroup;
 			children = (
-				CE1F8639298E2B2F00C62268 /* AppDelegate.swift */,
-				CE1F863B298E2B2F00C62268 /* SceneDelegate.swift */,
-				CE1F863D298E2B2F00C62268 /* ViewController.swift */,
-				CE1F863F298E2B2F00C62268 /* Main.storyboard */,
-				CE1F8642298E2B3200C62268 /* Assets.xcassets */,
-				CE1F8644298E2B3200C62268 /* LaunchScreen.storyboard */,
-				CE1F8647298E2B3200C62268 /* Info.plist */,
+				CE1F8652298E2F4600C62268 /* App */,
+				CE1F864F298E2F2100C62268 /* Model */,
+				CE1F8650298E2F2A00C62268 /* View */,
+				CE1F8651298E2F3000C62268 /* Controller */,
+				CE1F8654298E301B00C62268 /* Storyboard */,
+				CE1F8653298E2F6000C62268 /* Resources */,
+				CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */,
 			);
 			path = Chatik;
+			sourceTree = "<group>";
+		};
+		CE1F864F298E2F2100C62268 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE1F8650298E2F2A00C62268 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1F8651298E2F3000C62268 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D7C0F298E3314004EE117 /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE1F8652298E2F4600C62268 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F8639298E2B2F00C62268 /* AppDelegate.swift */,
+				CE1F863B298E2B2F00C62268 /* SceneDelegate.swift */,
+				CE1F8647298E2B3200C62268 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE1F8653298E2F6000C62268 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F8642298E2B3200C62268 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE1F8654298E301B00C62268 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F863F298E2B2F00C62268 /* Main.storyboard */,
+				CE1F8644298E2B3200C62268 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CE9D7C0F298E3314004EE117 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F863D298E2B2F00C62268 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EE865D9FAC3C90E40F5760E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69B70C3CFD5C52FCE3DE3A05 /* Pods_Chatik.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD696ED505918B70E2E282E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				878CFC3626395F7DA6EB03F3 /* Pods-Chatik.debug.xcconfig */,
+				B356229F87E86CB129AFDD40 /* Pods-Chatik.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE1F864A298E2B3200C62268 /* Build configuration list for PBXNativeTarget "Chatik" */;
 			buildPhases = (
+				418E3EC6E422A74176C2744F /* [CP] Check Pods Manifest.lock */,
 				CE1F8632298E2B2F00C62268 /* Sources */,
 				CE1F8633298E2B2F00C62268 /* Frameworks */,
 				CE1F8634298E2B2F00C62268 /* Resources */,
+				935CF13729B36B6CD6354886 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,17 +213,60 @@
 				CE1F8646298E2B3200C62268 /* LaunchScreen.storyboard in Resources */,
 				CE1F8643298E2B3200C62268 /* Assets.xcassets in Resources */,
 				CE1F8641298E2B2F00C62268 /* Main.storyboard in Resources */,
+				CE1F864E298E2C2700C62268 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		418E3EC6E422A74176C2744F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chatik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		935CF13729B36B6CD6354886 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chatik/Pods-Chatik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chatik/Pods-Chatik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chatik/Pods-Chatik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE1F8632298E2B2F00C62268 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1F863E298E2B2F00C62268 /* ViewController.swift in Sources */,
+				CE1F863E298E2B2F00C62268 /* LoginViewController.swift in Sources */,
 				CE1F863A298E2B2F00C62268 /* AppDelegate.swift in Sources */,
 				CE1F863C298E2B2F00C62268 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +410,7 @@
 		};
 		CE1F864B298E2B3200C62268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878CFC3626395F7DA6EB03F3 /* Pods-Chatik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,12 +418,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L86P4HUDQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Chatik/Info.plist;
+				INFOPLIST_FILE = Chatik/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +432,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = seleza1.Chatik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE1F864C298E2B3200C62268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B356229F87E86CB129AFDD40 /* Pods-Chatik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,12 +451,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L86P4HUDQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Chatik/Info.plist;
+				INFOPLIST_FILE = Chatik/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +465,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = seleza1.Chatik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
