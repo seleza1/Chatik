@@ -18,7 +18,6 @@
 		CE9D7C12298E3417004EE117 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */; };
 		CE9D7C13298E3417004EE117 /* SlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */; };
 		CE9D7C15298E3776004EE117 /* ModelSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C14298E3776004EE117 /* ModelSliders.swift */; };
-		CE9D7C17298E45DD004EE117 /* SliderSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C16298E45DD004EE117 /* SliderSlides.swift */; };
 		CE9D7C1A298E479A004EE117 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C19298E479A004EE117 /* RegisterViewController.swift */; };
 		CE9D7C1C298E47CD004EE117 /* AuthenticatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1B298E47CD004EE117 /* AuthenticatorViewController.swift */; };
 		CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */; };
@@ -40,7 +39,6 @@
 		CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE9D7C14298E3776004EE117 /* ModelSliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSliders.swift; sourceTree = "<group>"; };
-		CE9D7C16298E45DD004EE117 /* SliderSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSlides.swift; sourceTree = "<group>"; };
 		CE9D7C19298E479A004EE117 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE9D7C1B298E47CD004EE117 /* AuthenticatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorViewController.swift; sourceTree = "<group>"; };
 		CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				CE1F8654298E301B00C62268 /* Storyboard */,
 				CE1F8653298E2F6000C62268 /* Resources */,
 				CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */,
-				CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */,
 			);
 			path = Chatik;
 			sourceTree = "<group>";
@@ -95,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				CE9D7C14298E3776004EE117 /* ModelSliders.swift */,
-				CE9D7C16298E45DD004EE117 /* SliderSlides.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +108,7 @@
 		CE1F8651298E2F3000C62268 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CE9D7C1F298E5007004EE117 /* TabBar */,
 				CE9D7C18298E4784004EE117 /* Register */,
 				CE9D7C0F298E3314004EE117 /* Login */,
 			);
@@ -148,8 +145,8 @@
 		CE9D7C0F298E3314004EE117 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D7C1B298E47CD004EE117 /* AuthenticatorViewController.swift */,
 				CE1F863D298E2B2F00C62268 /* LoginViewController.swift */,
+				CE9D7C1B298E47CD004EE117 /* AuthenticatorViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -160,6 +157,14 @@
 				CE9D7C19298E479A004EE117 /* RegisterViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		CE9D7C1F298E5007004EE117 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		EE865D9FAC3C90E40F5760E4 /* Frameworks */ = {
@@ -301,7 +306,6 @@
 				CE9D7C1C298E47CD004EE117 /* AuthenticatorViewController.swift in Sources */,
 				CE9D7C1A298E479A004EE117 /* RegisterViewController.swift in Sources */,
 				CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */,
-				CE9D7C17298E45DD004EE117 /* SliderSlides.swift in Sources */,
 				CE1F863E298E2B2F00C62268 /* LoginViewController.swift in Sources */,
 				CE1F863A298E2B2F00C62268 /* AppDelegate.swift in Sources */,
 				CE1F863C298E2B2F00C62268 /* SceneDelegate.swift in Sources */,

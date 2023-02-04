@@ -13,7 +13,7 @@ class SlideCollectionViewCell: UICollectionViewCell {
     @IBOutlet var registerButton: UIButton!
     @IBOutlet var signInButton: UIButton!
 
-    static let reusId = "SlideCollectionViewCell"
+    static let reuseId = "SlideCollectionViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,9 +31,11 @@ class SlideCollectionViewCell: UICollectionViewCell {
     }
 
     @IBAction func registerButtonTapped(_ sender: UIButton) {
+
     }
 
     @IBAction func signInButtonTapped(_ sender: UIButton) {
+        
     }
 
 }

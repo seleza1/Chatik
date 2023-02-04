@@ -11,19 +11,15 @@ class LoginViewController: UIViewController {
 
     var collectionView: UICollectionView!
     var slider: [Sliders] = []
-
-    let Slides = SliderSlides()
+    let sliders = Sliders.getSlides()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
-        slider = Slides.getSlides()
-
-
-
+        slider = sliders
     }
 
-    func configureCollectionView() {
+    private func configureCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
@@ -35,7 +31,7 @@ class LoginViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.isPagingEnabled = true
-        collectionView.register(UINib(nibName: SlideCollectionViewCell.reusId, bundle: nil), forCellWithReuseIdentifier: SlideCollectionViewCell.reusId)
+        collectionView.register(UINib(nibName: SlideCollectionViewCell.reuseId, bundle: nil), forCellWithReuseIdentifier: SlideCollectionViewCell.reuseId)
     }
 
 
@@ -47,7 +43,7 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SlideCollectionViewCell.reusId, for: indexPath) as! SlideCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SlideCollectionViewCell.reuseId, for: indexPath) as! SlideCollectionViewCell
         let slide = slider[indexPath.row]
         cell.configure(slide: slide)
         return cell
@@ -56,7 +52,5 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return self.view.frame.size
     }
-
-
 }
 
