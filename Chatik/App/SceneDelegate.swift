@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        //userDefaults.set(true, forKey: "isLogin") теперь хранится в userDefaults даже если удалили эту строчку
+        userDefaults.set(false, forKey: "isLogin")
         let isLogin = userDefaults.object(forKey: "isLogin") as? Bool ?? false
 
         if isLogin {
@@ -34,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func startLogin() {
-        let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+        let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController")
         self.window?.rootViewController = loginVC
         self.window?.makeKeyAndVisible()
     }
