@@ -15,6 +15,8 @@
 		CE1F8643298E2B3200C62268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1F8642298E2B3200C62268 /* Assets.xcassets */; };
 		CE1F8646298E2B3200C62268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1F8644298E2B3200C62268 /* LaunchScreen.storyboard */; };
 		CE1F864E298E2C2700C62268 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */; };
+		CE9D7C12298E3417004EE117 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */; };
+		CE9D7C13298E3417004EE117 /* SlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE1F8645298E2B3200C62268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1F8647298E2B3200C62268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		CE1F8650298E2F2A00C62268 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */,
+				CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1F8646298E2B3200C62268 /* LaunchScreen.storyboard in Resources */,
+				CE9D7C13298E3417004EE117 /* SlideCollectionViewCell.xib in Resources */,
 				CE1F8643298E2B3200C62268 /* Assets.xcassets in Resources */,
 				CE1F8641298E2B2F00C62268 /* Main.storyboard in Resources */,
 				CE1F864E298E2C2700C62268 /* GoogleService-Info.plist in Resources */,
@@ -266,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9D7C12298E3417004EE117 /* SlideCollectionViewCell.swift in Sources */,
 				CE1F863E298E2B2F00C62268 /* LoginViewController.swift in Sources */,
 				CE1F863A298E2B2F00C62268 /* AppDelegate.swift in Sources */,
 				CE1F863C298E2B2F00C62268 /* SceneDelegate.swift in Sources */,
