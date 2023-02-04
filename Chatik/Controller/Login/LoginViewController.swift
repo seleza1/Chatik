@@ -12,17 +12,14 @@ class LoginViewController: UIViewController {
     var collectionView: UICollectionView!
     var slider: [Sliders] = []
 
+    let Slides = SliderSlides()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        slider = Slides.getSlides()
 
-        let sliderOne = Sliders(image: UIImage(named: "Divan")!)
-        let sliderSecond = Sliders(image: UIImage(named: "Divan")!)
-        let sliderTwo = Sliders(image: UIImage(named: "Divan")!)
 
-        slider.append(sliderOne)
-        slider.append(sliderSecond)
-        slider.append(sliderTwo)
 
     }
 

@@ -17,11 +17,16 @@ class SlideCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        registerButton.isHidden = true
+        signInButton.isHidden = true
     }
 
     func configure(slide: Sliders) {
         imageView.image = slide.image
+        if slide.id == 3 {
+            registerButton.isHidden = false
+            signInButton.isHidden = false 
+        }
 
     }
 

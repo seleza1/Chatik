@@ -8,5 +8,6 @@
 import UIKit
 
 struct Sliders {
+    var id: Int
     var image: UIImage
 }
