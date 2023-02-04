@@ -14,7 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var userDefaults = UserDefaults.standard
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        userDefaults.set(true, forKey: "isLogin")
+
+        //userDefaults.set(true, forKey: "isLogin") теперь хранится в userDefaults даже если удалили эту строчку
         let isLogin = userDefaults.object(forKey: "isLogin") as? Bool ?? false
 
         if isLogin {
