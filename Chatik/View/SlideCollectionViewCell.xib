@@ -35,11 +35,17 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="X6x-BE-au1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXU-H1-SFC">
                                 <rect key="frame" x="139.66666666666666" y="431" width="73" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Войти"/>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5Ar-k5-Ix8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,6 +71,11 @@
                 <constraint firstItem="vO6-Fb-TRD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qlZ-Ip-YNa"/>
             </constraints>
             <size key="customSize" width="352" height="517"/>
+            <connections>
+                <outlet property="imageView" destination="IeB-MT-ilG" id="EFH-Nh-VBw"/>
+                <outlet property="registerButton" destination="ho7-1d-msO" id="wHk-C1-lc6"/>
+                <outlet property="signInButton" destination="pXU-H1-SFC" id="zMw-md-ffU"/>
+            </connections>
             <point key="canvasLocation" x="-13.740458015267174" y="-8.8028169014084519"/>
         </collectionViewCell>
     </objects>

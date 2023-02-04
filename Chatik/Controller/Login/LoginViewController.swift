@@ -10,10 +10,19 @@ import UIKit
 class LoginViewController: UIViewController {
 
     var collectionView: UICollectionView!
+    var slider: [Sliders] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+
+        let sliderOne = Sliders(image: UIImage(named: "Divan")!)
+        let sliderSecond = Sliders(image: UIImage(named: "Divan")!)
+        let sliderTwo = Sliders(image: UIImage(named: "Divan")!)
+
+        slider.append(sliderOne)
+        slider.append(sliderSecond)
+        slider.append(sliderTwo)
 
     }
 
@@ -37,12 +46,13 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return slider.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SlideCollectionViewCell.reusId, for: indexPath) as! SlideCollectionViewCell
-
+        let slide = slider[indexPath.row]
+        cell.configure(slide: slide)
         return cell
     }
 
