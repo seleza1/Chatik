@@ -19,7 +19,7 @@
 		CE9D7C13298E3417004EE117 /* SlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */; };
 		CE9D7C15298E3776004EE117 /* ModelSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C14298E3776004EE117 /* ModelSliders.swift */; };
 		CE9D7C1A298E479A004EE117 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C19298E479A004EE117 /* RegisterViewController.swift */; };
-		CE9D7C1C298E47CD004EE117 /* AuthenticatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1B298E47CD004EE117 /* AuthenticatorViewController.swift */; };
+		CE9D7C1C298E47CD004EE117 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1B298E47CD004EE117 /* AuthorizationViewController.swift */; };
 		CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE9D7C14298E3776004EE117 /* ModelSliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSliders.swift; sourceTree = "<group>"; };
 		CE9D7C19298E479A004EE117 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		CE9D7C1B298E47CD004EE117 /* AuthenticatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorViewController.swift; sourceTree = "<group>"; };
+		CE9D7C1B298E47CD004EE117 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1F863D298E2B2F00C62268 /* LoginViewController.swift */,
-				CE9D7C1B298E47CD004EE117 /* AuthenticatorViewController.swift */,
+				CE9D7C1B298E47CD004EE117 /* AuthorizationViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -303,7 +303,7 @@
 			files = (
 				CE9D7C15298E3776004EE117 /* ModelSliders.swift in Sources */,
 				CE9D7C12298E3417004EE117 /* SlideCollectionViewCell.swift in Sources */,
-				CE9D7C1C298E47CD004EE117 /* AuthenticatorViewController.swift in Sources */,
+				CE9D7C1C298E47CD004EE117 /* AuthorizationViewController.swift in Sources */,
 				CE9D7C1A298E479A004EE117 /* RegisterViewController.swift in Sources */,
 				CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */,
 				CE1F863E298E2B2F00C62268 /* LoginViewController.swift in Sources */,

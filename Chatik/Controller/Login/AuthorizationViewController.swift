@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthenticatorViewController: UIViewController {
+class AuthorizationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
