@@ -15,6 +15,8 @@ class SlideCollectionViewCell: UICollectionViewCell {
 
     static let reuseId = "SlideCollectionViewCell"
 
+    var delegate: LoginViewControllerDelegate!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         registerButton.isHidden = true
@@ -31,10 +33,12 @@ class SlideCollectionViewCell: UICollectionViewCell {
     }
 
     @IBAction func registerButtonTapped(_ sender: UIButton) {
+        delegate.openRegisterVC()
 
     }
 
     @IBAction func signInButtonTapped(_ sender: UIButton) {
+        delegate.openAuthorizationVC()
         
     }
 

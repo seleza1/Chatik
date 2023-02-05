@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol LoginViewControllerDelegate {
+    func openRegisterVC()
+    func openAuthorizationVC()
+}
+
 class LoginViewController: UIViewController {
 
     var collectionView: UICollectionView!
@@ -44,6 +49,7 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SlideCollectionViewCell.reuseId, for: indexPath) as! SlideCollectionViewCell
+        cell.delegate = self
         let slide = slider[indexPath.row]
         cell.configure(slide: slide)
         return cell
@@ -52,5 +58,19 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return self.view.frame.size
     }
+}
+
+extension LoginViewController: LoginViewControllerDelegate {
+    func openAuthorizationVC() {
+        let authVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthorizationViewController")
+        self.view.insertSubview(authVC.view, at: 1)
+    }
+
+    func openRegisterVC() {
+        let regVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController")
+        self.view.insertSubview(regVC.view, at: 1)
+    }
+
+
 }
 

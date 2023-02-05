@@ -165,7 +165,6 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-mv-ta0">
                                                 <rect key="frame" x="0.0" y="225.5" width="315" height="34.5"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Уже есть аккаунт?"/>
                                             </button>
@@ -212,7 +211,7 @@
         <!--Authorization View Controller-->
         <scene sceneID="2VH-vp-WTi">
             <objects>
-                <viewController storyboardIdentifier="AuthenticatorViewController" id="i3z-QC-EOc" customClass="AuthorizationViewController" customModule="Chatik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthorizationViewController" id="i3z-QC-EOc" customClass="AuthorizationViewController" customModule="Chatik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Ax-SO-6Id">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,7 +288,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89z-Kr-uNY">
                                                 <rect key="frame" x="0.0" y="239" width="315" height="34.5"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Нет аккаунта?"/>
                                             </button>
