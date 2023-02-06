@@ -9,11 +9,16 @@ import UIKit
 
 class AuthorizationViewController: UIViewController {
 
+    var delegate: LoginViewControllerDelegate!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func closeVC(_ sender: UIButton) {
+        delegate.closeVC()
+    }
+    
 }

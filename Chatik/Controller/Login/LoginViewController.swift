@@ -10,6 +10,7 @@ import UIKit
 protocol LoginViewControllerDelegate {
     func openRegisterVC()
     func openAuthorizationVC()
+    func closeVC()
 }
 
 class LoginViewController: UIViewController {
@@ -17,6 +18,8 @@ class LoginViewController: UIViewController {
     var collectionView: UICollectionView!
     var slider: [Sliders] = []
     let sliders = Sliders.getSlides()
+    var authorizationVC: AuthorizationViewController!
+    var registrationVC: RegisterViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,16 +64,31 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
 }
 
 extension LoginViewController: LoginViewControllerDelegate {
+
     func openAuthorizationVC() {
-        let authVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthorizationViewController")
-        self.view.insertSubview(authVC.view, at: 1)
+        authorizationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthorizationViewController") as! AuthorizationViewController?
+        self.view.insertSubview(authorizationVC.view, at: 1)
+        authorizationVC.delegate = self
     }
 
     func openRegisterVC() {
-        let regVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController")
-        self.view.insertSubview(regVC.view, at: 1)
+        registrationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController?
+        self.view.insertSubview(registrationVC.view, at: 1)
+        registrationVC.delegate = self
     }
 
+    func closeVC() {
 
+        if authorizationVC != nil {
+            authorizationVC.view.removeFromSuperview() // удаляем с родительского вью
+            authorizationVC = nil
+        }
+
+        if registrationVC != nil {
+            registrationVC.view.removeFromSuperview()
+            registrationVC = nil
+
+        }
+    }
 }
 
