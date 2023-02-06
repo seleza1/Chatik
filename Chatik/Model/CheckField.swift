@@ -9,7 +9,7 @@ import UIKit
 
 class CheckField {
     
-    static let shared = CheckField()
+    static let shared = CheckField() // Singleton
     init() {}
     
     //isValid

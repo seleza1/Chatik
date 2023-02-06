@@ -13,12 +13,14 @@ class RegisterViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var repeatPasswordTextField: UITextField!
+
     @IBOutlet var emailView: UIView!
     @IBOutlet var passwordView: UIView!
     @IBOutlet var repeatPasswordView: UIView!
-    
+
     var gesture: UITapGestureRecognizer? //жест
     var delegate: LoginViewControllerDelegate!
+    var checkField = CheckField.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,17 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {
+        if checkField.validField(emailView, emailTextField),
+           checkField.validField(passwordView, passwordTextField)
+        {
+            if passwordTextField.text == repeatPasswordTextField.text {
+                print("поля совпадают")
+
+            } else {
+                print("поля не совпадают")
+            }
+
+        }
         
     }
 }
