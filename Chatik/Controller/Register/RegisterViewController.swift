@@ -38,12 +38,14 @@ class RegisterViewController: UIViewController {
            checkField.validField(passwordView, passwordTextField)
         {
             if passwordTextField.text == repeatPasswordTextField.text {
-                service.createUser(LoginField(email: emailTextField.text!, password: passwordTextField.text!)) { code in
+                service.createUser(LoginField(email: emailTextField.text!, password: passwordTextField.text!)) {[weak self] code in
                     switch code.code {
                     case 0:
-                        print("lol")
+                        print("Произошла ошибка")
                     case 1:
-                        print("Succes")
+                        print("Успешно зарегистрировались")
+                        self?.service.confirmEmail()
+
                     default:
                         print("Неизвестная ошибка")
                     }
