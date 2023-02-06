@@ -21,6 +21,7 @@ class RegisterViewController: UIViewController {
     var gesture: UITapGestureRecognizer? //жест
     var delegate: LoginViewControllerDelegate!
     var checkField = CheckField.shared
+    var service = Service.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,16 @@ class RegisterViewController: UIViewController {
            checkField.validField(passwordView, passwordTextField)
         {
             if passwordTextField.text == repeatPasswordTextField.text {
-                print("поля совпадают")
-
+                service.createUser(LoginField(email: emailTextField.text!, password: passwordTextField.text!)) { code in
+                    switch code.code {
+                    case 0:
+                        print("lol")
+                    case 1:
+                        print("Succes")
+                    default:
+                        print("Неизвестная ошибка")
+                    }
+                }
             } else {
                 print("поля не совпадают")
             }

@@ -22,6 +22,7 @@
 		CE9D7C1C298E47CD004EE117 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1B298E47CD004EE117 /* AuthorizationViewController.swift */; };
 		CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */; };
 		CE9D7C232990FA71004EE117 /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C222990FA71004EE117 /* CheckField.swift */; };
+		CE9D7C2529910142004EE117 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C2429910142004EE117 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CE9D7C1B298E47CD004EE117 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CE9D7C222990FA71004EE117 /* CheckField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
+		CE9D7C2429910142004EE117 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				CE9D7C222990FA71004EE117 /* CheckField.swift */,
 				CE9D7C14298E3776004EE117 /* ModelSliders.swift */,
+				CE9D7C2429910142004EE117 /* Service.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */,
 				CE9D7C232990FA71004EE117 /* CheckField.swift in Sources */,
 				CE1F863E298E2B2F00C62268 /* LoginViewController.swift in Sources */,
+				CE9D7C2529910142004EE117 /* Service.swift in Sources */,
 				CE1F863A298E2B2F00C62268 /* AppDelegate.swift in Sources */,
 				CE1F863C298E2B2F00C62268 /* SceneDelegate.swift in Sources */,
 			);

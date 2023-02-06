@@ -25,3 +25,13 @@ struct Sliders {
         return slider
     }
 }
+
+struct LoginField {
+    var email: String
+    var password: String
+
+}
+
+struct ResponceCode {
+    var code: Int
+}
