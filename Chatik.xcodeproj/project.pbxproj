@@ -23,6 +23,7 @@
 		CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */; };
 		CE9D7C232990FA71004EE117 /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C222990FA71004EE117 /* CheckField.swift */; };
 		CE9D7C2529910142004EE117 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C2429910142004EE117 /* Service.swift */; };
+		CEE1C30429915BD7002E0186 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1C30329915BD7002E0186 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CE9D7C222990FA71004EE117 /* CheckField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
 		CE9D7C2429910142004EE117 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CEE1C30329915BD7002E0186 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		CE1F8638298E2B2F00C62268 /* Chatik */ = {
 			isa = PBXGroup;
 			children = (
+				CEE1C30229915B9A002E0186 /* Extension */,
 				CE1F8652298E2F4600C62268 /* App */,
 				CE1F864F298E2F2100C62268 /* Model */,
 				CE1F8650298E2F2A00C62268 /* View */,
@@ -171,6 +174,14 @@
 				CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CEE1C30229915B9A002E0186 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1C30329915BD7002E0186 /* AlertController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		EE865D9FAC3C90E40F5760E4 /* Frameworks */ = {
@@ -315,6 +326,7 @@
 				CE9D7C232990FA71004EE117 /* CheckField.swift in Sources */,
 				CE1F863E298E2B2F00C62268 /* LoginViewController.swift in Sources */,
 				CE9D7C2529910142004EE117 /* Service.swift in Sources */,
+				CEE1C30429915BD7002E0186 /* AlertController.swift in Sources */,
 				CE1F863A298E2B2F00C62268 /* AppDelegate.swift in Sources */,
 				CE1F863C298E2B2F00C62268 /* SceneDelegate.swift in Sources */,
 			);
