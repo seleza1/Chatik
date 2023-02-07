@@ -35,25 +35,29 @@ class AuthorizationViewController: UIViewController {
     @IBAction func signInTapped(_ sender: UIButton) {
         if checkField.validField(emailView, emailTextField),
            checkField.validField(passwordView, passwordTextField) {
+
             let authData = LoginField(email: emailTextField.text!, password: passwordTextField.text!)
-            service.authIn(authData) { [weak self]responce in
+            service.authIn(authData) { [weak self] responce in
                 switch responce {
                     
                 case .success:
-                    print("next")
+                    print("Вы авторизированы")
                 case .noVerify:
-                    self?.alert(title: "Error", message: "Вы не верифицировали свой Email")
+                    self?.alert(title: "Error", message: "Вы не верифицировали свой Email. На вашу почту отправлена ссылка")
                 case .error:
-                    self?.alert(title: <#T##String#>, message: <#T##String#>)
-
+                    self?.alert(title: "Error", message: "Email или password не подошли")
                 }
             }
+        } else {
+            self.alert(title: "Error", message: "Проверьте введенные данные")
+            
         }
+
     }
 
     @IBAction func doNotHaveAccountTapped(_ sender: UIButton) {
-        delegate.closeVC()
-        delegate.openRegisterVC()
+        //delegate.closeVC()
+        //delegate.openRegisterVC()
     }
 }
 

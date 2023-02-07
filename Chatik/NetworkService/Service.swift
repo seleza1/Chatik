@@ -47,6 +47,7 @@ final class Service {
                     if result.user.isEmailVerified {
                         completion(.success)
                     } else {
+                        self.confirmEmail()
                         completion(.noVerify)
                     }
 

@@ -46,7 +46,7 @@ class RegisterViewController: UIViewController {
                         print("Успешно зарегистрировались")
                         self?.service.confirmEmail()
 
-                        self?.alert(title: "Autorization success", message: "You're welcome")
+                        self?.alert(title: "Success!", message: "На вашу почту пришло сообщение для подтверждения вашего email")
 
                     default:
                         print("Неизвестная ошибка")
