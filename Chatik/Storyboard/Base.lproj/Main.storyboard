@@ -311,11 +311,17 @@
                                                 <rect key="frame" x="0.0" y="174.5" width="315" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Забыли пароль?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordButton:" destination="i3z-QC-EOc" eventType="touchUpInside" id="IZI-FU-bqr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89z-Kr-uNY">
                                                 <rect key="frame" x="0.0" y="239" width="315" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Нет аккаунта?"/>
+                                                <connections>
+                                                    <action selector="doNotHaveAccountTapped:" destination="i3z-QC-EOc" eventType="touchUpInside" id="Vxm-sF-Ioq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DI-aB-HiM">
                                                 <rect key="frame" x="0.0" y="303.5" width="315" height="50"/>
@@ -337,6 +343,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="i3z-QC-EOc" eventType="touchUpInside" id="BA7-Uu-RLE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -371,6 +380,13 @@
                             <constraint firstItem="OwG-4Q-81a" firstAttribute="leading" secondItem="ljn-jk-fnE" secondAttribute="leading" id="sKK-M5-ngU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="S13-5f-WKq" id="mWh-7f-Kqq"/>
+                        <outlet property="emailView" destination="Y6U-8V-4xI" id="B0a-z4-bCl"/>
+                        <outlet property="mainView" destination="OwG-4Q-81a" id="nF4-Vv-Pb4"/>
+                        <outlet property="passwordTextField" destination="JEo-eX-41X" id="4N8-BN-nDT"/>
+                        <outlet property="passwordView" destination="zVA-U2-tli" id="1Bo-mx-hjY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qY-Te-P6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

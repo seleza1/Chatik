@@ -9,7 +9,8 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class Service {
+
+final class Service {
     static let shared = Service()
 
     init() {}
@@ -35,4 +36,29 @@ class Service {
      func confirmEmail() {
         Auth.auth().currentUser?.sendEmailVerification()
     }
+
+    func authIn(_ data: LoginField, completion: @escaping (AuthResponce) -> Void) {
+        Auth.auth().signIn(withEmail: data.email, password: data.password) { result, error in
+            if error != nil {
+                completion(.error)
+
+            } else {
+                if let result = result {
+                    if result.user.isEmailVerified {
+                        completion(.success)
+                    } else {
+                        completion(.noVerify)
+                    }
+
+                }
+            }
+        }
+    }
+
+    func getUserStatus() {
+        // is isset
+        // auth?
+    }
+
+
 }

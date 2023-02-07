@@ -7,6 +7,10 @@
 
 import UIKit
 
+
+enum AuthResponce {
+    case success, error, noVerify
+}
 struct Sliders {
     var id: Int
     var image: UIImage

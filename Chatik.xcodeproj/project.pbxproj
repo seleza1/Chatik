@@ -83,11 +83,12 @@
 		CE1F8638298E2B2F00C62268 /* Chatik */ = {
 			isa = PBXGroup;
 			children = (
-				CEE1C30229915B9A002E0186 /* Extension */,
-				CE1F8652298E2F4600C62268 /* App */,
+				CE1F8652298E2F4600C62268 /* Application */,
 				CE1F864F298E2F2100C62268 /* Model */,
 				CE1F8650298E2F2A00C62268 /* View */,
 				CE1F8651298E2F3000C62268 /* Controller */,
+				CEE1C30629916412002E0186 /* NetworkService */,
+				CEE1C30229915B9A002E0186 /* Extension */,
 				CE1F8654298E301B00C62268 /* Storyboard */,
 				CE1F8653298E2F6000C62268 /* Resources */,
 				CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */,
@@ -100,7 +101,6 @@
 			children = (
 				CE9D7C222990FA71004EE117 /* CheckField.swift */,
 				CE9D7C14298E3776004EE117 /* ModelSliders.swift */,
-				CE9D7C2429910142004EE117 /* Service.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,21 +117,21 @@
 		CE1F8651298E2F3000C62268 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D7C1F298E5007004EE117 /* TabBar */,
+				CEE1C30529916365002E0186 /* App */,
 				CE9D7C18298E4784004EE117 /* Register */,
 				CE9D7C0F298E3314004EE117 /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		CE1F8652298E2F4600C62268 /* App */ = {
+		CE1F8652298E2F4600C62268 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				CE1F8639298E2B2F00C62268 /* AppDelegate.swift */,
 				CE1F863B298E2B2F00C62268 /* SceneDelegate.swift */,
 				CE1F8647298E2B3200C62268 /* Info.plist */,
 			);
-			path = App;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		CE1F8653298E2F6000C62268 /* Resources */ = {
@@ -168,20 +168,28 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		CE9D7C1F298E5007004EE117 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
 		CEE1C30229915B9A002E0186 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				CEE1C30329915BD7002E0186 /* AlertController.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEE1C30529916365002E0186 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEE1C30629916412002E0186 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D7C2429910142004EE117 /* Service.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		EE865D9FAC3C90E40F5760E4 /* Frameworks */ = {
@@ -478,7 +486,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L86P4HUDQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Chatik/App/Info.plist;
+				INFOPLIST_FILE = Chatik/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -511,7 +519,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L86P4HUDQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Chatik/App/Info.plist;
+				INFOPLIST_FILE = Chatik/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
