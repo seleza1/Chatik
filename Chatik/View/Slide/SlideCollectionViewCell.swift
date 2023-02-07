@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SlideCollectionViewCell: UICollectionViewCell {
+final class SlideCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var registerButton: UIButton!

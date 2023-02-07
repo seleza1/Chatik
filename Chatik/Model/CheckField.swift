@@ -7,9 +7,10 @@
 
 import UIKit
 
-class CheckField {
+final class CheckField {
     
     static let shared = CheckField() // Singleton
+
     init() {}
     
     //isValid
@@ -27,7 +28,7 @@ class CheckField {
     }
     
     //validField
-    func validField(_ parentView: UIView, _ field: UITextField) -> Bool {
+     func validField(_ parentView: UIView, _ field: UITextField) -> Bool {
         let id = field.restorationIdentifier
         
         switch id {

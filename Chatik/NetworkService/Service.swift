@@ -15,7 +15,7 @@ final class Service {
 
     init() {}
 
-     func createUser(_ data: LoginField, completion: @escaping (ResponceCode) -> ()) {
+    func createUser(_ data: LoginField, completion: @escaping (ResponceCode) -> ()) {
         Auth.auth().createUser(withEmail: data.email, password: data.password) {  result, error in
             if error == nil {
                 if result != nil {
@@ -33,7 +33,7 @@ final class Service {
         }
     }
 
-     func confirmEmail() {
+    func confirmEmail() {
         Auth.auth().currentUser?.sendEmailVerification()
     }
 

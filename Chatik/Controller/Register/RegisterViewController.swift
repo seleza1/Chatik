@@ -7,13 +7,12 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+final class RegisterViewController: UIViewController {
 
     @IBOutlet var mainView: UIView!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var repeatPasswordTextField: UITextField!
-
     @IBOutlet var emailView: UIView!
     @IBOutlet var passwordView: UIView!
     @IBOutlet var repeatPasswordView: UIView!

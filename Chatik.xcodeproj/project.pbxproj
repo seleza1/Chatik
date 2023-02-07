@@ -24,6 +24,9 @@
 		CE9D7C232990FA71004EE117 /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C222990FA71004EE117 /* CheckField.swift */; };
 		CE9D7C2529910142004EE117 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C2429910142004EE117 /* Service.swift */; };
 		CEE1C30429915BD7002E0186 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1C30329915BD7002E0186 /* AlertController.swift */; };
+		CEFC229E2992BE7A00852CE9 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC229C2992BE7A00852CE9 /* UsersTableViewCell.swift */; };
+		CEFC229F2992BE7A00852CE9 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFC229D2992BE7A00852CE9 /* UsersTableViewCell.xib */; };
+		CEFC22A22992BF9100852CE9 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC22A12992BF9100852CE9 /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		CE9D7C222990FA71004EE117 /* CheckField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
 		CE9D7C2429910142004EE117 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CEE1C30329915BD7002E0186 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		CEFC229C2992BE7A00852CE9 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		CEFC229D2992BE7A00852CE9 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
+		CEFC22A12992BF9100852CE9 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,8 @@
 		CE1F8650298E2F2A00C62268 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */,
-				CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */,
+				CEFC229B2992BE5000852CE9 /* Users */,
+				CEFC22A02992BEAC00852CE9 /* Slide */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 		CEE1C30529916365002E0186 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CEFC22982992BD9900852CE9 /* Users */,
 				CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */,
 			);
 			path = App;
@@ -190,6 +197,32 @@
 				CE9D7C2429910142004EE117 /* Service.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		CEFC22982992BD9900852CE9 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC22A12992BF9100852CE9 /* UsersViewController.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		CEFC229B2992BE5000852CE9 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC229C2992BE7A00852CE9 /* UsersTableViewCell.swift */,
+				CEFC229D2992BE7A00852CE9 /* UsersTableViewCell.xib */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		CEFC22A02992BEAC00852CE9 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */,
+				CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */,
+			);
+			path = Slide;
 			sourceTree = "<group>";
 		};
 		EE865D9FAC3C90E40F5760E4 /* Frameworks */ = {
@@ -271,6 +304,7 @@
 			files = (
 				CE1F8646298E2B3200C62268 /* LaunchScreen.storyboard in Resources */,
 				CE9D7C13298E3417004EE117 /* SlideCollectionViewCell.xib in Resources */,
+				CEFC229F2992BE7A00852CE9 /* UsersTableViewCell.xib in Resources */,
 				CE1F8643298E2B3200C62268 /* Assets.xcassets in Resources */,
 				CE1F8641298E2B2F00C62268 /* Main.storyboard in Resources */,
 				CE1F864E298E2C2700C62268 /* GoogleService-Info.plist in Resources */,
@@ -328,6 +362,8 @@
 			files = (
 				CE9D7C15298E3776004EE117 /* ModelSliders.swift in Sources */,
 				CE9D7C12298E3417004EE117 /* SlideCollectionViewCell.swift in Sources */,
+				CEFC22A22992BF9100852CE9 /* UsersViewController.swift in Sources */,
+				CEFC229E2992BE7A00852CE9 /* UsersTableViewCell.swift in Sources */,
 				CE9D7C1C298E47CD004EE117 /* AuthorizationViewController.swift in Sources */,
 				CE9D7C1A298E479A004EE117 /* RegisterViewController.swift in Sources */,
 				CE9D7C1E298E491A004EE117 /* TabBarViewController.swift in Sources */,

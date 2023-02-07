@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthorizationViewController: UIViewController {
+final class AuthorizationViewController: UIViewController {
 
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
