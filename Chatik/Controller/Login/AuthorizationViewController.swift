@@ -19,6 +19,7 @@ class AuthorizationViewController: UIViewController {
     var service = Service.shared
     var checkField = CheckField.shared
     var gesture: UITapGestureRecognizer? //жест
+    var userDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +40,9 @@ class AuthorizationViewController: UIViewController {
             let authData = LoginField(email: emailTextField.text!, password: passwordTextField.text!)
             service.authIn(authData) { [weak self] responce in
                 switch responce {
-                    
                 case .success:
                     print("Вы авторизированы")
+                    self?.userDefaults.set(true, forKey: "isLogin")
                 case .noVerify:
                     self?.alert(title: "Error", message: "Вы не верифицировали свой Email. На вашу почту отправлена ссылка")
                 case .error:
