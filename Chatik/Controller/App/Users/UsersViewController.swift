@@ -11,9 +11,21 @@ class UsersViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
 
+    let service = Service.shared
+
+    var users = [String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        getUsers()
+    }
+
+    private func getUsers() {
+        service.getUsers { users in
+            self.users = users
+            self.tableView.reloadData()
+        }
     }
 
     private func setupTableView() {
@@ -26,12 +38,15 @@ class UsersViewController: UIViewController {
 
 extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return users.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UsersTableViewCell.reuseId, for: indexPath) as! UsersTableViewCell
         cell.selectionStyle = .none
+        let users = users[indexPath.row]
+
+        cell.configCell(users)
 
         return cell
     }
