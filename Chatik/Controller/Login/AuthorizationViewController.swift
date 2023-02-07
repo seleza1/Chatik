@@ -41,7 +41,11 @@ class AuthorizationViewController: UIViewController {
             service.authIn(authData) { [weak self] responce in
                 switch responce {
                 case .success:
+                    self?.userDefaults.set(true, forKey: "isLogin")
+                    self?.delegate.startApp()
+                    self?.delegate.closeVC()
                     print("Вы авторизированы")
+                    self?.delegate.startApp()
                     self?.userDefaults.set(true, forKey: "isLogin")
                 case .noVerify:
                     self?.alert(title: "Error", message: "Вы не верифицировали свой Email. На вашу почту отправлена ссылка")

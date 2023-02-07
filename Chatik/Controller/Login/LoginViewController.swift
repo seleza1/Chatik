@@ -10,6 +10,7 @@ import UIKit
 protocol LoginViewControllerDelegate {
     func openRegisterVC()
     func openAuthorizationVC()
+    func startApp()
     func closeVC()
 }
 
@@ -89,6 +90,12 @@ extension LoginViewController: LoginViewControllerDelegate {
             registrationVC = nil
 
         }
+
+    }
+
+    func startApp() {
+        let startVC = UIStoryboard(name: "Main", bundle:  nil).instantiateViewController(withIdentifier: "TabBarViewController")
+        self.view.insertSubview(startVC.view, at: 2)
     }
 }
 
