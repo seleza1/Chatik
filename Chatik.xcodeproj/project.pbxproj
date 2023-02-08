@@ -15,6 +15,8 @@
 		CE1F8643298E2B3200C62268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1F8642298E2B3200C62268 /* Assets.xcassets */; };
 		CE1F8646298E2B3200C62268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1F8644298E2B3200C62268 /* LaunchScreen.storyboard */; };
 		CE1F864E298E2C2700C62268 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */; };
+		CE741819299388B3003F4514 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE741818299388B3003F4514 /* MessageListViewController.swift */; };
+		CE74181B29938B1B003F4514 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74181A29938B1B003F4514 /* ChatViewController.swift */; };
 		CE9D7C12298E3417004EE117 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */; };
 		CE9D7C13298E3417004EE117 /* SlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */; };
 		CE9D7C15298E3776004EE117 /* ModelSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D7C14298E3776004EE117 /* ModelSliders.swift */; };
@@ -42,6 +44,8 @@
 		CE1F8645298E2B3200C62268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1F8647298E2B3200C62268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1F864D298E2C2700C62268 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE741818299388B3003F4514 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		CE74181A29938B1B003F4514 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		CE9D7C10298E3417004EE117 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE9D7C11298E3417004EE117 /* SlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE9D7C14298E3776004EE117 /* ModelSliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSliders.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		CE1F8650298E2F2A00C62268 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE74181729938820003F4514 /* Chat */,
 				CEFC229B2992BE5000852CE9 /* Users */,
 				CEFC22A02992BEAC00852CE9 /* Slide */,
 			);
@@ -157,6 +162,15 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		CE74181729938820003F4514 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CE741818299388B3003F4514 /* MessageListViewController.swift */,
+				CE74181A29938B1B003F4514 /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		CE9D7C0F298E3314004EE117 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,8 +199,8 @@
 		CEE1C30529916365002E0186 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CEFC22982992BD9900852CE9 /* Users */,
 				CE9D7C1D298E491A004EE117 /* TabBarViewController.swift */,
+				CEFC22982992BD9900852CE9 /* Users */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -360,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE741819299388B3003F4514 /* MessageListViewController.swift in Sources */,
 				CE9D7C15298E3776004EE117 /* ModelSliders.swift in Sources */,
 				CE9D7C12298E3417004EE117 /* SlideCollectionViewCell.swift in Sources */,
 				CEFC22A22992BF9100852CE9 /* UsersViewController.swift in Sources */,
@@ -372,6 +387,7 @@
 				CE9D7C2529910142004EE117 /* Service.swift in Sources */,
 				CEE1C30429915BD7002E0186 /* AlertController.swift in Sources */,
 				CE1F863A298E2B2F00C62268 /* AppDelegate.swift in Sources */,
+				CE74181B29938B1B003F4514 /* ChatViewController.swift in Sources */,
 				CE1F863C298E2B2F00C62268 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
