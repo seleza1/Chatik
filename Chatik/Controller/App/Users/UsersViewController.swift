@@ -12,7 +12,6 @@ class UsersViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
 
     let service = Service.shared
-
     var users = [String]()
 
     override func viewDidLoad() {
