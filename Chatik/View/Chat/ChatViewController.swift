@@ -7,6 +7,7 @@
 
 import UIKit
 import MessageKit
+import InputBarAccessoryView
 
 struct Sender: SenderType {
     var senderId: String
@@ -18,12 +19,18 @@ struct Message: MessageType {
     var messageId: String
     var sentDate: Date
     var kind: MessageKit.MessageKind
+
 }
 
 class ChatViewController: MessagesViewController {
 
     let selfSender = Sender(senderId: "1", displayName: "Name") // мы
     let otherSender = Sender(senderId: "2", displayName: "Mike") //  тот кто будет посылать сообщения
+    let service = Service.shared
+    var chatID: String? // if chaId == nil {its new chat}
+    var otherId: String?
+
+
 
     var messages = [Message]()
 
@@ -40,16 +47,24 @@ class ChatViewController: MessagesViewController {
             sender: otherSender,
             messageId: "2",
             sentDate: Date().addingTimeInterval(-2015),
-            kind: .text("Привет! все хорошо")
+            kind: .text("Привет!")
         ))
 
         messages.append(Message(
             sender: selfSender,
-            messageId: "3",
+            messageId: "1",
             sentDate: Date().addingTimeInterval(-2015),
-            kind: .text("А ты")
+            kind: .text("How are you?")
+        ))
+
+        messages.append(Message(
+            sender: selfSender,
+            messageId: "2",
+            sentDate: Date().addingTimeInterval(-2015),
+            kind: .text("Fine")
         ))
         setupMessages()
+        messageInputBar.delegate = self
 
     }
 
@@ -75,6 +90,19 @@ extension ChatViewController: MessagesDisplayDelegate, MessagesLayoutDelegate, M
     func numberOfSections(in messagesCollectionView: MessageKit.MessagesCollectionView) -> Int {
         return messages.count
     }
+}
 
+extension ChatViewController:  InputBarAccessoryViewDelegate {
+    func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
 
+        let msg = (Message(sender: selfSender, messageId: "!", sentDate: Date(), kind: .text(text)))
+
+        messages.append(msg)
+        service.sendMessage(otherId: otherId!, convoId: chatID!, message: msg, text: text) { [weak self] isSend in
+            DispatchQueue.main.async {
+                inputBar.inputTextView.text = nil
+                self?.messagesCollectionView.reloadDataAndKeepOffset()//когда приходит сообщения, чат автоматически к нему перелистывается
+            }
+        }
+    }
 }

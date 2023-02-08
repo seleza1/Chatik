@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MessageKit
 
 class MessageListViewController: UIViewController {
 
@@ -21,18 +22,20 @@ class MessageListViewController: UIViewController {
 
 extension MessageListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseMessage, for: indexPath)
-        cell.textLabel?.text = "fe"
+        cell.textLabel?.text = "Serega"
 
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let chatVC = ChatViewController()
+        chatVC.chatID = "FirstChat"
+        chatVC.otherId = "AhY7R4ShjbeZ81ipPQSfYeWw6yU2"
         navigationController?.pushViewController(chatVC, animated: true)
     }
 
