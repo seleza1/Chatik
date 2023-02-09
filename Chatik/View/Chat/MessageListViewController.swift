@@ -10,9 +10,9 @@ import MessageKit
 
 class MessageListViewController: UIViewController {
 
-    let reuseMessage = "cell"
-
     @IBOutlet var tableView: UITableView!
+
+    let reuseMessage = "cell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
