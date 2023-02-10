@@ -56,11 +56,6 @@ final class Service {
         }
     }
 
-    func getUserStatus() {
-        // is isset
-        // auth?
-    }
-
     func getUsers(completion: @escaping ([String]) -> ()) {
         Firestore.firestore().collection("users").getDocuments { snap, error in
             if error == nil {

@@ -42,8 +42,6 @@ final class LoginViewController: UIViewController {
         collectionView.isPagingEnabled = true
         collectionView.register(UINib(nibName: SlideCollectionViewCell.reuseId, bundle: nil), forCellWithReuseIdentifier: SlideCollectionViewCell.reuseId)
     }
-
-
 }
 
 extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
