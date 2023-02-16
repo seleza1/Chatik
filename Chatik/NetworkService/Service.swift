@@ -78,25 +78,26 @@ final class Service {
 
 
     func sendMessage(otherId: String, convoId: String, text: String, completion: @escaping (Bool) -> ()) {
-        if convoId == nil {
-            // create new chat
-        } else {
-            let message: [String: Any] = [
-                "date": Date(),
-                "sender": message.sender.senderId,
-                "text": text
+        if let uid = Auth.auth().currentUser?.uid {
+            if convoId == nil {
+                // create new chat
+            } else {
+                let message: [String: Any] = [
+                    "date": Date(),
+                    "sender": uid,
+                    "text": text
 
 
-            ]
-            Firestore.firestore().collection("conversations").document(convoId).collection("messages").addDocument(data: message) { error in
-                if error == nil {
-                    completion(true)
-                } else {
-                    completion(false)
+                ]
+                Firestore.firestore().collection("conversations").document(convoId).collection("messages").addDocument(data: message) { error in
+                    if error == nil {
+                        completion(true)
+                    } else {
+                        completion(false)
+                    }
                 }
             }
         }
-
     }
 
     func updateConvo() {
