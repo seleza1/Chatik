@@ -35,15 +35,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8zl-n7-Pr4" kind="relationship" relationship="viewControllers" id="QpR-p5-lj7"/>
+                        <segue destination="p00-64-0HX" kind="relationship" relationship="viewControllers" id="QpR-p5-lj7"/>
                         <segue destination="3xg-Rj-G7E" kind="relationship" relationship="viewControllers" id="C2D-Kz-p8X"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLL-vn-tE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="250" y="721"/>
+            <point key="canvasLocation" x="-642" y="761"/>
         </scene>
-        <!--Пользователи-->
+        <!--Users View Controller-->
         <scene sceneID="pgF-7o-Huu">
             <objects>
                 <viewController storyboardIdentifier="UsersViewController" id="8zl-n7-Pr4" customClass="UsersViewController" customModule="Chatik" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZVP-4w-hkC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8zl-n7-Pr4" id="LvW-p4-mOg"/>
@@ -69,14 +69,14 @@
                             <constraint firstItem="ZVP-4w-hkC" firstAttribute="leading" secondItem="Moe-qY-HjQ" secondAttribute="leading" id="zNh-zI-Ow7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Пользователи" image="person.2" catalog="system" selectedImage="person.2.fill" id="1Am-pL-Y9i"/>
+                    <navigationItem key="navigationItem" id="Pxq-sU-zj1"/>
                     <connections>
                         <outlet property="tableView" destination="ZVP-4w-hkC" id="8bA-DZ-zbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbP-Jg-iz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="1387.5562218890557"/>
+            <point key="canvasLocation" x="238" y="1503"/>
         </scene>
         <!--Сообщения-->
         <scene sceneID="Is9-Gk-76g">
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agZ-LE-Pew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="1388.4557721139431"/>
+            <point key="canvasLocation" x="-642" y="2186"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Wkp-uQ-lCf">
@@ -455,7 +455,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nrd-sZ-wLz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608.79999999999995" y="1388.4557721139431"/>
+            <point key="canvasLocation" x="-642" y="1503"/>
+        </scene>
+        <!--Пользователи-->
+        <scene sceneID="NkN-0k-dkx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p00-64-0HX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Пользователи" image="person.2" catalog="system" selectedImage="person.2.fill" id="1Am-pL-Y9i"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uAd-rt-AP5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8zl-n7-Pr4" kind="relationship" relationship="rootViewController" id="cNh-qw-TXW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oup-to-jCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="761"/>
         </scene>
     </scenes>
     <resources>

@@ -56,24 +56,28 @@ final class Service {
         }
     }
 
-    func getUsers(completion: @escaping ([String]) -> ()) {
-        Firestore.firestore().collection("users").getDocuments { snap, error in
+    func getUsers(completion: @escaping ([CurentUser]) -> ()) {
+        guard let email = Auth.auth().currentUser?.email else { return }
+        var curentUser = [CurentUser]()
+        Firestore.firestore().collection("users")
+            .whereField("email", isNotEqualTo: email) // self not show in chats
+            .getDocuments { snap, error in
             if error == nil {
-                var emailList = [String]()
                 if let docs = snap?.documents {
                     for doc in docs {
                         let data = doc.data()
+                        let userId = doc.documentID
                         let email = data["email"] as! String
-                        emailList.append(email)
+                        curentUser.append(CurentUser(id: userId, email: email))
                     }
                 }
-                completion(emailList)
+                completion(curentUser)
             }
         }
     }
 
 
-    func sendMessage(otherId: String, convoId: String, message: Message, text: String, completion: @escaping (Bool) -> ()) {
+    func sendMessage(otherId: String, convoId: String, text: String, completion: @escaping (Bool) -> ()) {
         if convoId == nil {
             // create new chat
         } else {
